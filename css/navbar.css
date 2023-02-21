@@ -1,0 +1,19 @@
+.header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 20px;
+    background: rgba(0, 0, 0, .3);
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, .3);
+}
+
+.header .btn {
+    padding: 10px 20px;
+    border-radius: 0;
+    border: 0;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+}
