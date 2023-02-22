@@ -1,12 +1,14 @@
-body {
-    color: white;
-    font-family: 'Roboto Light', sans-serif;
-    background: #0b192e;
-}
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Roboto:300,400,500,700');
 
 canvas {
     display: block;
     vertical-align: bottom;
+}
+
+body {
+    color: white;
+    background: #0b192e;
+    font-family: 'Roboto Regular', sans-serif;
 }
 
 #blue-bg {
@@ -36,20 +38,101 @@ canvas {
     transform: scale(2);
 }
 
-main {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    overflow-x: hidden;
+.title {
+    font-family: 'Audiowide Regular', sans-serif;
+    font-size: 3.5rem;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 50px 50px 200px rgba(67, 19, 147, 0.9);
 }
 
-main img {
-    width: 700px;
+.content {
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 1rem;
+    padding: 10px 20px;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.container {
+    padding-top: 30vh;
+}
+
+.logo-section {
+    height: 0;
+    margin-top: -15px;
+    position: absolute;
+}
+
+.logo-section img {
     opacity: 0;
+    z-index: 2;
+    /* Height of logo to height of header */
+    height: 100px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 0;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.btn[class="btn active"] {
+    background-color: #133157;
+}
+
+.btn:hover {
+    background-color: #122548;
+}
+
+.btn:focus {
+    /* Bootstrap automatically adds some outline and box-shadow onfocus */
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.discord-btn {
+    border: 1px solid #7289da !important;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    display: block;
+    margin: 25px auto;
+    box-shadow: 15px 15px 60px rgba(0, 0, 0, .5);
+}
+
+.discord-btn:hover {
+    background: #485991 !important;
+}
+
+.votopia-btn {
+    border: 1px solid #7289da !important;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    display: block;
+    margin: 25px auto;
+    box-shadow: 15px 15px 60px rgba(0, 0, 0, .5);
+}
+
+.button-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
