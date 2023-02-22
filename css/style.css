@@ -10,6 +10,10 @@ canvas {
     vertical-align: bottom;
 }
 
+#bg {
+    opacity: 0;
+}
+
 body {
     color: white;
     background: #0b192e;
@@ -121,6 +125,21 @@ body {
 
 .btn2:focus {
     outline: none;
+}
+
+.who {
+    padding-top: 41vh;
+}
+
+.who .content {
+    background: rgba(11, 51, 65, .9);
+    border-radius: 10px;
+    padding: 20px 40px;
+}
+
+.who .content p {
+    padding: 0;
+    margin: 0;
 }
 
 @media only screen and (min-width: 768px) {
