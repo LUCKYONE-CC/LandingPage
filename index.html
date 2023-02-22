@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
           integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="js/navbar.js"></script>
 </head>
 <body>
 <div id="blue-bg"></div>
@@ -102,13 +103,27 @@
     </svg>
 </div>
 
-<header class="header">
+<header class="header1">
     <div class="selection">
         <button class="btn active"><i class="fa-solid fa-house"></i> <span>Home</span></button>
         <button class="btn"><i class="fa-solid fa-user"></i> <span>About</span></button>
         <button class="btn"><i class="fa-solid fa-folder-open"></i> <span>Projects</span></button>
         <button class="btn"><i style="transform: translateY(1px);" class="fa-solid fa-clock"></i> <span>Future</span>
         </button>
+    </div>
+</header>
+
+<header class="header2">
+    <i class="fa-solid fa-bars open-menu" id="menu_toggle"></i>
+    <div class="menu" id="menu">
+        <i class="fa-solid fa-times close-menu" id="close_menu"></i>
+        <div class="menu-content">
+            <button class="btn active"><i class="fa-solid fa-house"></i> <span>Home</span></button>
+            <button class="btn"><i class="fa-solid fa-user"></i> <span>About</span></button>
+            <button class="btn"><i class="fa-solid fa-folder-open"></i> <span>Projects</span></button>
+            <button class="btn"><i style="transform: translateY(1px);" class="fa-solid fa-clock"></i> <span>Future</span>
+            </button>
+        </div>
     </div>
 </header>
 

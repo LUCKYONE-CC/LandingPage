@@ -37,18 +37,18 @@ canvas {
 }
 
 main {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: flex;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 main img {
-    width: 600px;
-    margin: 0 auto;
+    width: 700px;
     opacity: 0;
 }
 
