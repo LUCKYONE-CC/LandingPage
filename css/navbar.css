@@ -9,11 +9,36 @@
     box-shadow: 10px 10px 60px rgba(0, 0, 0, .3);
 }
 
+.header .selection {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
 .header .btn {
-    padding: 10px 20px;
-    border-radius: 0;
+    padding: 10px 15px;
+    border-radius: 3px;
     border: 0;
     background: transparent;
     color: white;
+    cursor: pointer;
     font-size: 18px;
+    transition: .3s;
+}
+
+.header .btn + .btn {
+    margin-left: 10px;
+}
+
+i + span {
+    margin-left: 4px;
+}
+
+.btn[class="btn active"] {
+    background-color: #133157;
+}
+
+.btn:hover {
+    background-color: #122548;
 }

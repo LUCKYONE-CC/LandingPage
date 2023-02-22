@@ -36,12 +36,6 @@ canvas {
     transform: scale(2);
 }
 
-@media only screen and (min-width: 768px) {
-    #darker svg {
-        transform: scale(1.4);
-    }
-}
-
 main {
     position: fixed;
     top: 50%;
@@ -53,7 +47,17 @@ main {
 }
 
 main img {
-    width: 850px;
+    width: 600px;
     margin: 0 auto;
     opacity: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    #darker svg {
+        transform: scale(1.4);
+    }
+
+    main img {
+        width: 850px;
+    }
 }
