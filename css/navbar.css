@@ -6,6 +6,7 @@
     top: 0;
     left: 0;
     padding: 20px 20px;
+    height: 100px;
 }
 
 .header1 .selection {
@@ -13,6 +14,10 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+.selection {
+    padding-top: 5px;
 }
 
 .header1 .btn + .btn {
@@ -25,6 +30,57 @@
 
 i + span {
     margin-left: 4px;
+}
+
+.logo-section {
+    height: 0;
+    margin-top: -15px;
+    position: absolute;
+}
+
+.logo-section img {
+    opacity: 0;
+    width: auto;
+    height: 90px;
+    z-index: 2;
+    /* Height of logo to height of header */
+}
+
+.button-list2 {
+    height: 0;
+    margin-top: -25px;
+    position: static;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.button-list2 button {
+    font-size: 1.25rem;
+}
+
+.button-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #657bea;
+}
+
+.login i {
+    padding-right: 12px;
 }
 
 /* Mobile */

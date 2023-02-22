@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide|Roboto:300,400,500,700');
 
+@font-face {
+    font-family: 'UbuntuMono';
+    src: url('../fonts/UbuntuMono-Regular.ttf');
+}
+
 canvas {
     display: block;
     vertical-align: bottom;
@@ -8,7 +13,7 @@ canvas {
 body {
     color: white;
     background: #0b192e;
-    font-family: 'Roboto Regular', sans-serif;
+    font-family: 'UbuntuMono', sans-serif;
 }
 
 #blue-bg {
@@ -44,7 +49,18 @@ body {
     padding: 0;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 50px 50px 200px rgba(67, 19, 147, 0.9);
+    text-shadow: 0 0 500px rgba(67, 19, 147, 0.9);
+}
+
+.title span:nth-child(1) {
+    line-height: 100px;
+    color: #7b58b4;
+    text-align: center;
+}
+
+.title #sub {
+    color: #657bea;
+    text-align: center;
 }
 
 .content {
@@ -61,19 +77,6 @@ body {
     padding-top: 30vh;
 }
 
-.logo-section {
-    height: 0;
-    margin-top: -15px;
-    position: absolute;
-}
-
-.logo-section img {
-    opacity: 0;
-    z-index: 2;
-    /* Height of logo to height of header */
-    height: 100px;
-}
-
 .btn {
     padding: 10px 15px;
     border-radius: 3px;
@@ -81,7 +84,7 @@ body {
     background: transparent;
     color: white;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     transition: .3s;
 }
 
@@ -99,7 +102,9 @@ body {
     outline: none !important;
 }
 
-.discord-btn {
+.btn2 {
+    cursor: pointer;
+    border-radius: 3px;
     border: 1px solid #7289da !important;
     background: transparent;
     color: white;
@@ -107,32 +112,15 @@ body {
     padding: 10px 20px;
     display: block;
     margin: 25px auto;
-    box-shadow: 15px 15px 60px rgba(0, 0, 0, .5);
+    box-shadow: 5px 5px 60px rgba(0, 0, 0, .5);
 }
 
-.discord-btn:hover {
+.btn2:hover {
     background: #485991 !important;
 }
 
-.votopia-btn {
-    border: 1px solid #7289da !important;
-    background: transparent;
-    color: white;
-    font-size: 1rem;
-    padding: 10px 20px;
-    display: block;
-    margin: 25px auto;
-    box-shadow: 15px 15px 60px rgba(0, 0, 0, .5);
-}
-
-.button-list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 40%;
-    margin: 0 auto;
+.btn2:focus {
+    outline: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -142,5 +130,9 @@ body {
 
     main img {
         width: 850px;
+    }
+
+    .title {
+        font-family: 'Audiowide', cursive;
     }
 }
